@@ -1,0 +1,117 @@
+{
+  "userSays": [
+    {
+      "id": "b8e90199-aa87-4db6-b072-40d0b00e0e52",
+      "data": [
+        {
+          "text": "what is the "
+        },
+        {
+          "text": "state",
+          "alias": "state",
+          "meta": "@state",
+          "userDefined": true
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "lights",
+          "alias": "device",
+          "meta": "@device",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "901d64b2-6bca-419f-9d82-aac9934e7d90",
+      "data": [
+        {
+          "text": "turn "
+        },
+        {
+          "text": "off",
+          "alias": "state",
+          "meta": "@state",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "lights",
+          "alias": "device",
+          "meta": "@device",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c345f04d-f89c-41d3-b226-e995e6f08331",
+      "data": [
+        {
+          "text": "turn "
+        },
+        {
+          "text": "on",
+          "alias": "state",
+          "meta": "@state",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "lights",
+          "alias": "device",
+          "meta": "@device",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "d80c7ca1-934d-4ab3-b1d5-78988af11469",
+  "name": "control",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@state",
+          "name": "state",
+          "value": "$state",
+          "isList": false
+        },
+        {
+          "dataType": "@device",
+          "name": "device",
+          "value": "$device",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "$location room $device is $state now"
+        }
+      ],
+      "defaultResponsePlatforms": [
+        "google"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

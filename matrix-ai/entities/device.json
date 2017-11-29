@@ -1,0 +1,16 @@
+{
+  "id": "71e4d245-6636-414f-84d8-3f0742a4181b",
+  "name": "device",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "light",
+      "synonyms": [
+        "light",
+        "light"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

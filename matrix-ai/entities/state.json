@@ -1,0 +1,27 @@
+{
+  "id": "e186494b-d826-4bbf-9458-1bbc8bea5283",
+  "name": "state",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "on",
+      "synonyms": [
+        "on"
+      ]
+    },
+    {
+      "value": "off",
+      "synonyms": [
+        "off"
+      ]
+    },
+    {
+      "value": "state",
+      "synonyms": [
+        "state"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

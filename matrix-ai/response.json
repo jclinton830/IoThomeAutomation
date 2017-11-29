@@ -1,0 +1,91 @@
+{
+  "agentToAssistantDebug": {
+    "agentToAssistantJson": {
+      "conversationToken": "[]",
+      "finalResponse": {
+        "richResponse": {
+          "items": [
+            {
+              "simpleResponse": {
+                "text_to_speech": true
+              }
+            }
+          ]
+        }
+      },
+      "responseMetadata": {
+        "status": {
+          "code": 14
+        },
+        "queryMatchInfo": {
+          "queryMatched": true,
+          "intent": "d80c7ca1-934d-4ab3-b1d5-78988af11469"
+        }
+      },
+      "expectedInput": {
+        "requestedIntent": {
+          "intent": "d80c7ca1-934d-4ab3-b1d5-78988af11469"
+        }
+      }
+    }
+  },
+  "assistantToAgentDebug": {
+    "assistantToAgentJson": {
+      "user": {
+        "userId": "ABwppHEkoH1vC6HhYDwQKk0LQbtWmEYN-SX0VWWDE729Ls_ebhU04wvUfhYfr7YMPvixuBjNaZlsj3BUpOqK",
+        "locale": "en-US",
+        "lastSeen": "2017-11-26T04:12:28Z"
+      },
+      "conversation": {
+        "conversationId": "1511669599353",
+        "type": "NEW"
+      },
+      "inputs": [
+        {
+          "intent": "actions.intent.MAIN",
+          "rawInputs": [
+            {
+              "inputType": "VOICE",
+              "query": "Talk to Rufus AI"
+            }
+          ]
+        }
+      ],
+      "surface": {
+        "capabilities": [
+          {
+            "name": "actions.capability.AUDIO_OUTPUT"
+          },
+          {
+            "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+          }
+        ]
+      },
+      "isInSandbox": true,
+      "availableSurfaces": [
+        {
+          "capabilities": [
+            {
+              "name": "actions.capability.AUDIO_OUTPUT"
+            },
+            {
+              "name": "actions.capability.SCREEN_OUTPUT"
+            }
+          ]
+        }
+      ]
+    },
+    "curlCommand": "curl -v 'https://api.api.ai/api/integrations/google?token=502f94a7be744d46b1516d658b48fe24' -H 'Content-Type: application/json;charset=UTF-8' -H 'Google-Actions-API-Version: 2' -H 'Authorization: eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlMTgzMzE1NzM2NDgyNGZjZTZhOTc3MTJmMjY3NDE2NmI0YTcwODMifQ.eyJhdWQiOiJtYXRyaXgtYWktYjE3ZjQiLCJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJqdGkiOiI5ZWZjNjA4NmYyZDIyNDc2YzcxYWIwODA1MTQxN2U3NjU1ZGM1MzY4IiwiaWF0IjoxNTExNjY5NTk5LCJleHAiOjE1MTE2Njk3MTksIm5iZiI6MTUxMTY2OTI5OX0.lKU8GEhCD822EuTvshgrDUJCExSCEqgZlX14ajn8dE940N95fDKIey4lQObPIKz52O4lJ0ujwC1ojsZds1uUmAnVbPkOkv_bKv4lBOotJOF6DOOIZ9mB7ujkOHltNWheaYrV0n4OJzccWdPywxu0GhH9-kigYL7mpREvvy0RI5rle0HuxwzEml9t_1_xdtp1pydxn2MQ0Be-AjhB0nb4ZJhGrR0ZQpLM73hSoO_zJ8u6SDBws1VS-Cy3lR-i6_vIgf9AzbdvL-56fiJ-_SevRrBdiLEA57DXA84rJlyrDMsLAB8sNEJLREb6qMUV2G4oP_vAVKOrJ9CV7EZdu-q9jQ'  -A 'Mozilla/5.0 (compatible; Google-Cloud-Functions/2.1; +http://www.google.com/bot.html)' -X POST -d '{\"user\":{\"userId\":\"ABwppHEkoH1vC6HhYDwQKk0LQbtWmEYN-SX0VWWDE729Ls_ebhU04wvUfhYfr7YMPvixuBjNaZlsj3BUpOqK\",\"locale\":\"en-US\",\"lastSeen\":\"2017-11-26T04:12:28Z\"},\"conversation\":{\"conversationId\":\"1511669599353\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to Rufus AI\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]}]}'"
+  },
+  "sharedDebugInfo": [
+    {
+      "name": "ResponseValidation",
+      "subDebugEntry": [
+        {
+          "debugInfo": "final_response.rich_response.items[0].simple_response: 'text_to_speech' or 'ssml' must be set.",
+          "name": "MalformedResponse"
+        }
+      ]
+    }
+  ]
+}
